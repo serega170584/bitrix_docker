@@ -1,3 +1,3 @@
 FROM debian
-RUN apt update
-RUN apt install git
+RUN apt update -y
+RUN apt install git -y
