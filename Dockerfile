@@ -1,4 +1,4 @@
 FROM debian
-CMD apt update -y
-CMD apt install apache2 -y
-CMD apt install git -y
+RUN apt update
+CMD apt install -y apache2
+CMD apt install -y git
