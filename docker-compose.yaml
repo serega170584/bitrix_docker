@@ -2,6 +2,7 @@ version: "3.8"
 services:
   debian_bitrix:
     build: .
+    command: service nginx start
     volumes:
     - test_vol:/test_vol
     ports:
