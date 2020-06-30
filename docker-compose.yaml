@@ -5,5 +5,7 @@ services:
     image: debian_bitrix
     volumes:
     - test_vol:/test_vol
+    ports:
+    - 80:80
 volumes:
   test_vol:
