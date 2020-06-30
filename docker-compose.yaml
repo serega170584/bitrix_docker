@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   debian_bitrix:
-    command: service https start
+    command: service httpd start
     image: debian_bitrix
     volumes:
     - test_vol:/test_vol
