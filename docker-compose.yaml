@@ -4,3 +4,5 @@ services:
     image: debian_bitrix
     volumes:
     - test_vol:/test_vol
+volumes:
+  test_vol:
