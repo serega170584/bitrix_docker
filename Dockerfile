@@ -6,4 +6,5 @@ RUN apt-get install -y git
 RUN apt-get install -y nano
 RUN apt-get install -y nginx
 RUN mkdir /test_vol
-CMD service nginx start
+RUN nginx -g daemon off
+RUN service nginx start
