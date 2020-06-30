@@ -2,6 +2,7 @@ version: "3.8"
 services:
   debian_bitrix:
     image: debian_bitrix
+    command: /bin/bash
     volumes:
     - test_vol:/test_vol
 volumes:
