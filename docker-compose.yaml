@@ -6,6 +6,6 @@ services:
     volumes:
     - test_vol:/test_vol
     ports:
-    - 80:80
+    - "80:80"
 volumes:
   test_vol:
