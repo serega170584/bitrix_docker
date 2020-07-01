@@ -1,9 +1,12 @@
 version: "3.8"
 services:
   debian_bitrix:
-    build: .
     volumes:
-    - ./test_vol:/test_vol
-    - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
+      - ./test_vol:/test_vol
+      - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
+      - ./ports.conf:/etc/apache2/ports.conf
+      - ./nginx_server.conf:/etc/nginx/sites-available/nginx_server.conf
+      - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
+    build: .
     ports:
     - "80:80"
