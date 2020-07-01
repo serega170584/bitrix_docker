@@ -4,7 +4,6 @@ services:
     build: .
     volumes:
     - ./test_vol:/test_vol
-    - ./apache2:/etc/apache2
     ports:
     - "80:80"
     stdin_open: true
