@@ -3,7 +3,7 @@ services:
   debian_bitrix:
     build: .
     volumes:
-    - test_vol:/test_vol
+    - ./test_vol:/test_vol
     ports:
     - "80:80"
     stdin_open: true
