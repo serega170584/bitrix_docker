@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
     - ./test_vol:/test_vol
+    - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
     ports:
     - "80:80"
     stdin_open: true
