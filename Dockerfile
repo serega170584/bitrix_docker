@@ -8,7 +8,9 @@ RUN apt-get install -y nginx
 RUN apt-get install -y php
 RUN mkdir /var/www/html/bitrix
 RUN mkdir /test_vol
-CMD ["service", "apache2", "start"]
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
 #RUN 'nginx -g daemon off'
 #RUN service nginx start
+RUN apt-get install -y supervisor
+RUN mkdir -p /var/log/supervisor
+CMD ["/usr/bin/supervisord"]
