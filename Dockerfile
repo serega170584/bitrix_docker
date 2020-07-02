@@ -14,5 +14,5 @@ RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #RUN 'nginx -g daemon off'
-#CMD ["/usr/bin/supervisord"]
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+#CMD ["nginx", "-g", "daemon off;"]
