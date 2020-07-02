@@ -13,4 +13,5 @@ RUN mkdir /test_vol
 #RUN service nginx start
 RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD ["/usr/bin/supervisord"]
