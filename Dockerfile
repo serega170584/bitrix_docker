@@ -7,6 +7,7 @@ RUN apt-get install -y nano
 RUN apt-get install -y nginx
 RUN apt-get install -y php
 RUN mkdir /var/www/html/bitrix
+RUN chown www-data:www-data /var/www/html/bitrix
 #CMD ["nginx", "-g", "daemon off;"]
 #RUN service nginx start
 RUN apt-get install -y supervisor
