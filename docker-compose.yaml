@@ -10,7 +10,7 @@ services:
     volumes:
       - ./test_vol:/test_vol
       - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
-      - ./httpd_server_link.conf:/etc/apache2/sites-available/httpd_server_link.conf
+      - ./httpd_server_link.conf:/etc/apache2/sites-enabled/httpd_server_link.conf
       - ./ports.conf:/etc/apache2/ports.conf
       - ./nginx_server.conf:/etc/nginx/sites-available/nginx_server.conf
       - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
