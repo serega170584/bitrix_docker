@@ -1,3 +1,4 @@
 <?php
 //$fdescr = fopen('php://stdin', 'r');
-echo json_decode(file_get_contents('php://stdin'));
+$str=file_get_contents('php://stdin');
+echo json_decode($str);
