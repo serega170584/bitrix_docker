@@ -7,10 +7,12 @@ RUN apt-get install -y nano
 RUN apt-get install -y nginx
 RUN apt-get install -y php
 RUN apt install wget
+RUN apt install zip
 RUN mkdir /var/www/html/bitrix
 RUN chown www-data:www-data /var/www/html/bitrix
-RUN wget https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php --directory-prefix=/var/www/html/bitrix
-RUN chown www-data:www-data /var/www/html/bitrix/bitrixsetup.php
+RUN wget https://www.1c-bitrix.ru/download/standard_encode.zip --directory-prefix=/var/www/html/bitrix
+RUN chown www-data:www-data /var/www/html/bitrix/standard_encode.zip
+RUN unzip /var/www/html/bitrix/standard_encode.zip
 RUN mkdir /var/www/html/bitrix/session
 RUN chown www-data:www-data /var/www/html/bitrix/session
 #CMD ["nginx", "-g", "daemon off;"]
