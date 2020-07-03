@@ -12,7 +12,7 @@ RUN mkdir /var/www/html/bitrix
 RUN chown www-data:www-data /var/www/html/bitrix
 RUN wget https://www.1c-bitrix.ru/download/standard_encode.zip --directory-prefix=/var/www/html/bitrix
 RUN chown www-data:www-data /var/www/html/bitrix/standard_encode.zip
-RUN unzip /var/www/html/bitrix/standard_encode.zip
+#RUN unzip /var/www/html/bitrix/standard_encode.zip
 RUN mkdir /var/www/html/bitrix/session
 RUN chown www-data:www-data /var/www/html/bitrix/session
 #CMD ["nginx", "-g", "daemon off;"]
