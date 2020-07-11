@@ -13,7 +13,6 @@ services:
       - ./ports.conf:/etc/apache2/ports.conf
       - ./nginx_server.conf:/etc/nginx/sites-available/nginx_server.conf
       - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
-      - ./bitrix:/var/www/html/bitrix
     build: .
     ports:
     - "80:80"
