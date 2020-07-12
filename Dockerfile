@@ -8,6 +8,7 @@ RUN apt-get install -y nginx
 RUN apt-get install -y php
 RUN apt-get install -y php-mbstring
 RUN apt-get install -y php-mysql
+RUN apt-get install -y php-gd
 RUN apt install wget
 RUN apt install -y zip
 RUN mkdir /var/www/html/bitrix
