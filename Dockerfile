@@ -9,6 +9,7 @@ RUN apt-get install -y php
 RUN apt-get install -y php-mbstring
 RUN apt-get install -y php-mysql
 RUN apt-get install -y php-gd
+RUN apt-get install -y php-xml
 RUN apt install wget
 RUN apt install -y zip
 RUN mkdir /var/www/html/bitrix
