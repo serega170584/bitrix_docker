@@ -14,7 +14,37 @@ RUN apt-get install -y nano
 RUN apt-get install -y nginx
 #RUN echo "deb https://packages.sury.org/php/ jessie main" > /etc/apt/sources.list.d/php.list
 #RUN apt-get update
-RUN apt install -y php7.1 php7.1-fpm  php7.1-opcache php7.1-zip php7.1-xmlrpc php7.1-xsl php7.1-mbstring php7.1-mcrypt php7.1-mysql php7.1-odbc php7.1-pgsql php7.1-pspell php7.1-readline php7.1-recode php7.1-snmp php7.1-soap php7.1-sqlite3 php7.1-sybase php7.1-tidy php7.1-xml php7.1-json php7.1-ldap php7.1-intl php7.1-interbase php7.1-imap php7.1-gmp php7.1-gd php7.1-enchant php7.1-dba php7.1-bz2 php7.1-bcmath php7.1-phpdbg php7.1-cgi php7.1-cli
+RUN apt install -y php7.1
+RUN apt install -y php7.1-opcache
+RUN apt install -y php7.1-zip
+RUN apt install -y php7.1-xmlrpc
+RUN apt install -y php7.1-xsl
+RUN apt install -y php7.1-mbstring
+RUN apt install -y php7.1-mcrypt
+RUN apt install -y php7.1-mysql
+RUN apt install -y php7.1-odbc
+RUN apt install -y php7.1-readline
+RUN apt install -y php7.1-recode
+RUN apt install -y php7.1-snmp
+RUN apt install -y php7.1-soap
+RUN apt install -y php7.1-sqlite3
+RUN apt install -y php7.1-sybase
+RUN apt install -y php7.1-tidy
+RUN apt install -y php7.1-xml
+RUN apt install -y php7.1-json
+RUN apt install -y php7.1-ldap
+RUN apt install -y php7.1-intl
+RUN apt install -y php7.1-interbase
+RUN apt install -y php7.1-imap
+RUN apt install -y php7.1-gmp
+RUN apt install -y php7.1-gd
+RUN apt install -y php7.1-enchant
+RUN apt install -y php7.1-dba
+RUN apt install -y php7.1-bz2
+RUN apt install -y php7.1-bcmath
+RUN apt install -y php7.1-phpdbg
+RUN apt install -y php7.1-cgi
+RUN apt install -y php7.1-cli
 RUN apt install wget
 RUN apt install -y zip
 RUN mkdir /var/www/html/bitrix
