@@ -5,7 +5,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 123456
-
+    volumes:
+      - ./bitrix.cnf:/etc/mysql/conf.d/bitrix.cnf
   debian_bitrix:
     volumes:
       - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
@@ -13,7 +14,6 @@ services:
       - ./ports.conf:/etc/apache2/ports.conf
       - ./nginx_server.conf:/etc/nginx/sites-available/nginx_server.conf
       - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
-      - ./bitrix.cnf:/etc/mysql/conf.d/bitrix.cnf
     build: .
     ports:
-    - "80:80"
+      - "80:80"
