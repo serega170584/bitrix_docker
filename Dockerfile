@@ -1,5 +1,6 @@
 FROM debian:9
 RUN apt-get update
+RUN apt-get install -y gnupg2
 RUN apt install -y apt-transport-https
 RUN apt install -y ca-certificates
 RUN apt install -y curl
