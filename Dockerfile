@@ -1,5 +1,8 @@
 FROM debian:9
 RUN apt-get update
+RUN apt install apt-transport-https ca-certificates curl software-properties-common
+RUN curl -fsSL https://packages.sury.org/php/apt.gpg | sudo apt-key add -
+RUN add-apt-repository "deb https://packages.sury.org/php/ $(lsb_release -cs) main"
 RUN dpkg -a --configure
 RUN apt-get install -y apache2
 RUN apt-get install -y git
