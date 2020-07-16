@@ -20,4 +20,8 @@ Steps
 ```docker-compose up -d```
 8. Open file ```C:\Windows\System32\drivers\etc``` and add: ```127.0.0.1 bitrix-test.ru``` and save;
 9. Open ```http://bitrix-test.ru``` in browser and complete steps. Db connection: db. Login and password for db: ```root 123456```;
-10. After install in kernel module settings tab ```update``` check ```for developers```
+10. After install in kernel module settings tab ```update``` check ```for developers```.
+
+Notification
+--
+In repository ```https://github.com/serega170584/bitrix_docker.git``` directory ```local``` -  for modules, directory ```project``` - for new pages.
