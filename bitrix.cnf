@@ -1,2 +1,3 @@
 [mariadb]
 innodb_strict_mode=OFF
+default_time_zone = 'Europe/Moscow'
