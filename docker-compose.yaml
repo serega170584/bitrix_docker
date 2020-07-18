@@ -17,6 +17,5 @@ services:
       - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
       - ./local:/var/www/html/bitrix/local
       - ./project:/var/www/html/bitrix/project
-    build: .
     ports:
       - "80:80"
