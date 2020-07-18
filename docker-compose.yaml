@@ -8,7 +8,7 @@ services:
     volumes:
       - ./bitrix.cnf:/etc/mysql/conf.d/bitrix.cnf
   debian_bitrix:
-    image: serega170584/bitrix_site
+    image: serega170584/bitrix_site:latest
     volumes:
       - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
       - ./httpd_server_link.conf:/etc/apache2/sites-enabled/httpd_server_link.conf
