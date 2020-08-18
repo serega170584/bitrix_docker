@@ -8,7 +8,6 @@ services:
     volumes:
       - ./bitrix.cnf:/etc/mysql/conf.d/bitrix.cnf
   debian_bitrix:
-    image: serega170584/bitrix_site:1.0
     volumes:
       - ./httpd_server.conf:/etc/apache2/sites-available/httpd_server.conf
       - ./httpd_server_link.conf:/etc/apache2/sites-enabled/httpd_server_link.conf
@@ -17,5 +16,6 @@ services:
       - ./nginx_server_link.conf:/etc/nginx/sites-enabled/nginx_server_link.conf
       - ./local:/var/www/html/bitrix/local
       - ./project:/var/www/html/bitrix/project
+    build: .
     ports:
       - "80:80"
